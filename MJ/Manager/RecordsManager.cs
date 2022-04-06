@@ -30,7 +30,7 @@ namespace RestRecords.Manager
             InputList = Data.FindAll(i => i.Title.ToLower().Contains(input.ToLower()));
             foreach (var record in Data)
             {
-                if (record.ArtistName.Contains(input) && !InputList.Contains(record))
+                if (record.ArtistName.ToLower().Contains(input.ToLower()) && !InputList.Contains(record))
                 {
                     InputList.Add(record);
                 }

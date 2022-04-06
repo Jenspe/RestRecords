@@ -73,6 +73,13 @@ namespace RestRecords.Manager.Tests
             Assert.AreEqual("upd", test.ArtistName);
 
         }
+        [TestMethod]
+        public void SearchTest()
+        {
+            List<Record> test = rm.GetByNameOrTitle("ben");
+
+            Assert.AreEqual(1,test.Count);
+        }
 
     }
 }
