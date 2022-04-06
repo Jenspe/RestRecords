@@ -23,6 +23,13 @@ namespace RestRecords.Manager
             return Data.Find(record => record.Id == id);
         }
 
+
+        public List<Record> GetByNameOrTitle(string input)
+        {
+            List<Record> InputList;
+            InputList = Data.FindAll(i => i.Title.ToLower().Contains(Title.ToLower().()) 
+        }
+
         public List<Record> GetAll()
         {
             return Data;

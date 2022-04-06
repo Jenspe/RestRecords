@@ -33,6 +33,15 @@ namespace RestRecords.Controllers
             return _recordsManager.GetById(id);
         }
 
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [HttpGet]
+        public ActionResult<IEnumerable<Record>> GetByNameOrTitle()
+        {
+
+
+        }
+
 
         // Get Api/<RecordsController>/5
         [ProducesResponseType(StatusCodes.Status200OK)]
