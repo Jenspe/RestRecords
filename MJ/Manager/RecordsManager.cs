@@ -58,8 +58,15 @@ namespace RestRecords.Manager
             return record;
         }
 
-        
 
+        public Record Update(int id, Record updates)
+        {
+            Record record = Data.Find(record1 => record1.Id == id);
+            if (record == null) return null;
+            record.Title = updates.Title;
+            record.ArtistName = updates.ArtistName;
+            return record;
+        }
 
 
 

@@ -58,5 +58,21 @@ namespace RestRecords.Manager.Tests
             Assert.IsNull(rm.Delete(10));
 
         }
+
+
+
+        [TestMethod]
+        public void UpdateTest()
+        {
+            Record newRec = new Record("Granit", 20, "sten");
+            rm.Add(newRec);
+            Record id2 = new Record("updatemig", 82, "upd");
+
+            Record test = rm.Update(4, id2);
+
+            Assert.AreEqual("upd", test.ArtistName);
+
+        }
+
     }
 }

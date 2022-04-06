@@ -62,8 +62,8 @@ namespace RestRecords.Controllers
 
         // PUT api/<RecordsController>/5
         [ProducesResponseType(StatusCodes.Status201Created)]
-        [HttpPut("{id}")]
-        public Record Put(int id, [FromBody] Record value)
+        [HttpPost]
+        public Record Post(int id, [FromBody] Record value)
         {
             return _recordsManager.Add(value);
         }
@@ -71,10 +71,17 @@ namespace RestRecords.Controllers
         // DELETE api/<RecordsController>/5
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public Record Delete(int id)
         {
             return _recordsManager.Delete(id); 
         }
+
+        [HttpPut("update/{id}")]
+        public Record Put(int id, [FromBody] Record value)
+        {
+            return _recordsManager.Update(id, value);
+        }
+
     }
 }
