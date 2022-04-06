@@ -26,8 +26,16 @@ namespace RestRecords.Manager
 
         public List<Record> GetByNameOrTitle(string input)
         {
-            List<Record> InputList;
-            InputList = Data.FindAll(i => i.Title.ToLower().Contains(Title.ToLower().()) 
+            List<Record> InputList = new List<Record>();
+            InputList = Data.FindAll(i => i.Title.ToLower().Contains(input.ToLower()));
+            foreach (var record in Data)
+            {
+                if (record.ArtistName.Contains(input) && !InputList.Contains(record))
+                {
+                    InputList.Add(record);
+                }
+            }
+            return InputList;
         }
 
         public List<Record> GetAll()

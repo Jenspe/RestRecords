@@ -27,7 +27,7 @@ namespace RestRecords.Controllers
         // GET api/<RecordsController>/5
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet("{id}")]
+        [HttpGet("id/{id}")]
         public Record GetById(int id)
         {
             return _recordsManager.GetById(id);
@@ -35,11 +35,10 @@ namespace RestRecords.Controllers
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [HttpGet]
-        public ActionResult<IEnumerable<Record>> GetByNameOrTitle()
+        [HttpGet("search/{input}")]
+        public ActionResult<IEnumerable<Record>> GetByNameOrTitle(string input)
         {
-
-
+            return _recordsManager.GetByNameOrTitle(input);
         }
 
 
