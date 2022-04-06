@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MJ", "MJ\MJ.csproj", "{EFF47EB0-CDA8-4DB9-BBF8-128445519EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MJTests", "MJTests\MJTests.csproj", "{425D9072-D2BC-4F39-AFCF-C4DD259B87BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFF47EB0-CDA8-4DB9-BBF8-128445519EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF47EB0-CDA8-4DB9-BBF8-128445519EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF47EB0-CDA8-4DB9-BBF8-128445519EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF47EB0-CDA8-4DB9-BBF8-128445519EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425D9072-D2BC-4F39-AFCF-C4DD259B87BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425D9072-D2BC-4F39-AFCF-C4DD259B87BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425D9072-D2BC-4F39-AFCF-C4DD259B87BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425D9072-D2BC-4F39-AFCF-C4DD259B87BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE687ACB-6EB0-4615-A68B-89646829D4ED}
+	EndGlobalSection
+EndGlobal
